@@ -5,6 +5,18 @@ module ReferenceByLanguage
     setlang(ref, item_property(page, LANG))
   end
 
+  # pass reference and language as 2 words of the input
+  # to work around the possibility that github-pages
+  # may not be able to pass arguments to filters (18.09.2016)
+  def reflang(reflang)
+    if reflang
+      ref, lang = reflang.split
+      setlang(ref, lang)
+    else
+      '/404.html'
+    end
+  end
+
   # link to page with given reference and given language
   def setlang(ref, lang)
     pages = @context.registers[:site].pages

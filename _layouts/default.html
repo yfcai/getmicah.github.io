@@ -20,7 +20,8 @@
       <h1>{{ pagename }}</h1>
       <ul>
         {% for lang in site.data.languages %}
-          <li><a href="{{ page.ref | setlang: lang.code }}">{{ lang.display }}</a></li>
+        {% capture refcode %}{{ page.ref }} {{ lang.code }}{% endcapture %}
+          <li><a href="{{ refcode | reflang }}">{{ lang.display }}</a></li>
         {% endfor %}
       </ul>
     </div>
