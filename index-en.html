@@ -29,7 +29,23 @@ layout: default
 
   <h1><a href="cv-{{ page.lang }}.html">Curriculum Vitae</a></h1>
 
-  <h1>Projects</h1>
+  <h1>Software Projects</h1>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/ps-mr/tutorial-assignment">[Tutorial Assignment]</span></a>
+
+    This Scala console application scheduled tutorials for "Informatik 1", a
+    400-student lecture at the university of Tübingen. It integrates with the
+    lecture's <a href="https://forum-ps.informatik.uni-tuebingen.de/">forum</a>
+    based on <a href="https://www.discourse.org/">Discourse</a>. Students and
+    tutors enter their time tables as a forum setting; the teaching staff enter
+    the availability of rooms. The software assigns students and tutors to rooms
+    and timeslots such that all tutors have similar numbers of students. The
+    scheduling problem is then encoded as a minimum-cost-flow instance with edge
+    activation constraints, to be solved by
+    <a href="http://www.gurobi.com/">Gurobi</a> via
+    <a href="https://github.com/vagm/Optimus">Optimus</a>.
+  </p>
 
   <h1>Publications</h1>
 </div>
