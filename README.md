@@ -1,14 +1,11 @@
-# getmicah.github.io
-My blog made with [jekyll](http://jekyllrb.com) and hosted with Github Pages.
+# Personal Website
 
+Personal website of Yufei Cai.
 
-### Install
-
-* fork this repository
-* edit the `_config.yml` with your info
-* change the links in `_data/navigation.yml`
-* remove my posts from `_posts/`
-* rename your repo to ***your-username*.github.io**
+Built from the "basic" Jekyll theme by [Micah Cowell](https://github.com/getmicah/getmicah.github.io). Follow the link for installation instructions.
 
 ### License
-All this stuff is under the [MIT License](https://raw.githubusercontent.com/getmicah/getmicah.github.io/master/LICENSE)
+
+Micah Cowell's theme is is under the [MIT License](https://raw.githubusercontent.com/getmicah/getmicah.github.io/master/LICENSE).
+
+Yufei Cai's writings here are in the [public domain](https://github.com/ps-mr/tutorial-assignment/blob/master/LICENSE).
