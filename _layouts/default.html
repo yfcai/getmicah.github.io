@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
 
+{% assign pagename = site.data.macros.title[page.lang] %}
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    {% if page.title %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ site.name }}</title>
-    {% endif %}
-    <meta name="description" content="{{ site.description }}">
-    <link rel="icon" href="/assets/img/favicon.png">
-    <link rel="stylesheet" 
-href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>{{ pagename }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 
 <body>
-
-    <div class="wrapper">
-        {{ content }}
+  <div class="wrapper">
+    <div class="header">
+      <h1>{{ pagename }}</h1>
+      <ul>
+        {% for lang in site.data.languages %}
+          <li><a href="{{ page.ref | lang: lang.code }}">{{ lang.display }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
 
+    {% if page.ref == site.data.macros.homepage %}{% else %}
+      <p><a class="post__back" href="{{ site.data.macros.homepage | lang: page.lang }}">&lt;-- {{site.data.macros.back2home[page.lang]}}</a></p>
+    {% endif %}
+
+    {{ content }}
+  </div>
 </body>
 
 </html>
