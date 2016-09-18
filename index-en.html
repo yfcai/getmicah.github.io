@@ -32,8 +32,7 @@ layout: default
   <h1>Software Projects</h1>
 
   <p class="hangingindent">
-    <span class="h7"><a href="https://github.com/ps-mr/tutorial-assignment">[Tutorial Assignment]</span></a>
-
+    <span class="h7"><a href="https://github.com/ps-mr/tutorial-assignment">[Tutorial Assignment]</a></span>
     This Scala console application scheduled tutorials for "Informatik 1", a
     400-student lecture at the university of Tübingen. It integrates with the
     lecture's <a href="https://forum-ps.informatik.uni-tuebingen.de/">forum</a>
@@ -47,5 +46,73 @@ layout: default
     <a href="https://github.com/vagm/Optimus">Optimus</a>.
   </p>
 
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/adscib/monad-bayes/">[monad-bayes]</a></span>
+    A probabilistic programming library for <a href="https://www.haskell.org/">Haskell</a>,
+    based on <a href="http://book.realworldhaskell.org/read/monad-transformers.html">monad transformers</a>.
+    An earlier version is described in <a href="http://dl.acm.org/citation.cfm?id=2804317">this paper</a>
+    by Ścibior, Ghahramani and Gordon. I mainly contributed an implementation of
+    Metropolis-Hastings algorithm.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/yfcai/CREG">[CREG]</a></span>
+    A Scala macro library to generate regular functors from datatype
+    descriptions; essentially a port of
+    <a href="https://downloads.haskell.org/~ghc/7.8.4/docs/html/users_guide/deriving.html">deriveTraversable</a>
+    for <a href="https://www.haskell.org/ghc/">GHC</a> with fewer restrictions
+    on type-level functions. The experience working on this library eventually
+    led to <a href="http://dl.acm.org/citation.cfm?id=2837660">a paper</a>
+    about equirecursive types in generic programming.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/inc-lc/ilc-scala">[ILC-Scala]</a></span>
+    <span class="h7"><a href="https://github.com/inc-lc/ilc-agda">[ILC-Agda]</a></span>
+    Software artifacts of the
+    <a href="http://ps.informatik.uni-tuebingen.de/research/ilc/">incremental lambda calculus</a> project.
+    <a href="https://github.com/inc-lc/ilc-scala">ILC-Scala</a> implements a
+    simple functional language with a code transformation turning ordinary
+    programs into incremental programs.
+    <a href="https://github.com/inc-lc/ilc-scala">[ILC-Scala]</a> is a
+    machine-checked proof that the code transformation preserves the meaning of
+    programs.
+  <p>
+
   <h1>Publications</h1>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="http://dl.acm.org/citation.cfm?id=2837660">[Fω]</a></span>
+    System f-omega with equirecursive types for datatype-generic programming.
+    By Cai, Giarrusso and Osterman at
+    <a href="http://conf.researchr.org/home/POPL-2016">POPL 2016</a>.
+  <p>
+  <p class="indentall">
+    This paper argues for the importance of equirecursive types in generic programming
+    and shows some feasiblity results: type soundness in the presence of
+    higher-order equirecursive types, and decidability of type checking for
+    the first-order fragment.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="http://dl.acm.org/citation.cfm?id=2594304">[ILC]</a></span>
+    A theory of changes for higher-order languages: incrementalizing λ-calculi by static differentiation.
+    By Cai, Giarrusso, Rendel and Ostermann at <a href="http://conferences.inf.ed.ac.uk/pldi2014/">PLDI 2014</a>.
+  </p>
+  <p class="indentall">
+    The paper produced by the
+    <a href="http://ps.informatik.uni-tuebingen.de/research/ilc/">incremental lambda calculus</a>
+    project.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="http://link.springer.com/chapter/10.1007%2F978-3-319-03898-8_9">[H-free]</a></span>
+    Incompressibility of H-Free Edge Modification. By Leizhen Cai and Yufei Cai at
+    <a href="http://www.kr.tuwien.ac.at/events/ipec2013/">IPEC 2013</a>.
+  </p>
+  <p class="indentall">
+    This paper characterizes whether H-free edge modification problems have a
+    polynomial kernel when H is a path, cycle or 3-connected graph.
+  </p>
+
 </div>
