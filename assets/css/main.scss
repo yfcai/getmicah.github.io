@@ -16,7 +16,8 @@ h1 {
 }
 p {
 	font-size: 1em;
-	line-height: 150%;
+	line-height: 100%;
+        margin-bottom: 10px;
 }
 a {
   color: $color-link;
@@ -55,6 +56,15 @@ ul {
 	@media screen and (max-width: $br) {
 		padding: 20px;
 	}
+}
+
+.portrait {
+        max-width: 250px;
+        float: right;
+}
+
+.portrait-blob {
+        max-width: 325px;
 }
 
 
