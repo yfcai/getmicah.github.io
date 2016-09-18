@@ -2,11 +2,11 @@ module ReferenceByLanguage
   # link to page with given reference and identical language
   def link(ref)
     page = @context.environments.first[PAGE]
-    lang(ref, item_property(page, LANG))
+    setlang(ref, item_property(page, LANG))
   end
 
   # link to page with given reference and given language
-  def lang(ref, lang)
+  def setlang(ref, lang)
     pages = @context.registers[:site].pages
     nextpages = JFilter.where(JFilter.where(pages, REF, ref), LANG, lang)
     if nextpages.empty?

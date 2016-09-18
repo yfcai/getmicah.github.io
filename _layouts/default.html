@@ -20,13 +20,13 @@
       <h1>{{ pagename }}</h1>
       <ul>
         {% for lang in site.data.languages %}
-          <li><a href="{{ page.ref | lang: lang.code }}">{{ lang.display }} ({{ lang.code }})</a></li>
+          <li><a href="{{ page.ref | setlang: lang.code }}">{{ lang.display }}</a></li>
         {% endfor %}
       </ul>
     </div>
 
     {% if page.ref == site.data.macros.homepage %}{% else %}
-      <p><a class="post__back" href="{{ site.data.macros.homepage | lang: page.lang }}">&lt;-- {{site.data.macros.back2home[page.lang]}}</a></p>
+      <p><a class="post__back" href="{{ site.data.macros.homepage | link }}">&lt;-- {{ site.data.macros.back2home[page.lang] }}</a></p>
     {% endif %}
 
     {{ content }}
