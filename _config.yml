@@ -1,12 +1,8 @@
-# Blog settings
-permalink: /blog/:title
-
-
-# My variables
-name: Micah Cowell
-description: Futuristic web design
-google_verification: null
-
+# variables from Micah Cowell's template
+name:
+ Yufei Cai
+description:
+ Yufei Cai's personal homepage
 
 # File management
 include: [".htaccess"]
@@ -17,7 +13,6 @@ exclude: ["README.md", "LICENSE"]
 sass:
   style: :compressed
   sass_dir: _sass
-
 
 # Markdown
 markdown: kramdown
