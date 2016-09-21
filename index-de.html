@@ -5,5 +5,69 @@ layout: default
 ---
 
 <div class="blog">
-  <p>Wird gebaut.</p>
+  <div>
+    <img class="portrait" src="/assets/img/photo.jpg" />
+
+    <div class="portrait-blob">
+
+      <p>Hallo, Sie haben meine Homepage erreicht. Hier finden Sie Informationen
+      über meine Arbeit.</p>
+
+      <p>Ich bin Wissenschaftlicher Mitarbeiter und Doktorrand der
+      <a href="http://www.uni-tuebingen.de/">Eberhard-Karls-Universität Tübingen</a>.
+      Ich mag pragmatische Anwendungen für Mathematik oder theoretische
+      Informatik. Bis jetzt habe ich einige Verbindungen entdeckt zwischen denotationeller
+      Semantik getypter Lambda-Kalküle und
+      <a href="http://ps.informatik.uni-tuebingen.de/research/ilc/">inkrementaler</a>,
+      <a href="http://ps.informatik.uni-tuebingen.de/research/functors/">generischer</a>
+      oder probabilistischer Programmierung.
+
+      <p>Bei Fragen wenden Sie sich gerne an
+      <a href="mailto:yufei.yang.cai@gmail.com">meine Emailadresse</a>.</p>
+    </div>
+  </div>
+
+  <h1><a href="cv-{{ page.lang }}.html">Lebenslauf</a></h1>
+
+  <h1>Softwareprojekte</h1>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/ps-mr/tutorial-assignment">[Tutorial Assignment]</a></span>
+
+    Dieses Scala-Programm sortiert 500 Studierende in die Übungsgruppen. Es
+    liest die Terminpläne von Studierenden, Tutoren und die Raumbuchungen aus
+    einem
+    <a href="https://www.discourse.org/">Discourse</a>-<a href="https://forum-ps.informatik.uni-tuebingen.de/">Forum</a>.
+    Dann transformiert es das Gruppenverteilungsproblem ins
+    Min-Cost-Flow-Problem mit zusätzlichen Beschränkungen. Die Lösung wird von
+    <a href="http://www.gurobi.com/">Gurobi</a> durch das Interface
+    <a href="https://github.com/vagm/Optimus">Optimus</a> berechnet.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/adscib/monad-bayes/">[monad-bayes]</a></span>
+
+    <a href="https://www.haskell.org/">Haskell</a>-Bibliothek für
+    probabilistische Programmierung.
+    <a href="http://dl.acm.org/citation.cfm?id=2804317">Dieses Paper</a> von
+    Ścibior, Ghahramani und Gordon beschreibt eine frühere Version.
+    Hauptsächlich habe ich den Metropolis-Hastings Algorithmus implementiert.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/yfcai/CREG">[CREG]</a></span>
+    Scala-Makro-Bibliothek zur Erzeugung regulärer Funktoren aus Datentypen.
+  </p>
+
+  <p class="hangingindent">
+    <span class="h7"><a href="https://github.com/inc-lc/ilc-scala">[ILC-Scala]</a></span>
+    <span class="h7"><a href="https://github.com/inc-lc/ilc-agda">[ILC-Agda]</a></span>
+    Erzeugung inkrementaller Programme in einer einfachen funktionellen Sprache
+    bei Übersetzungszeit. Deren Korrektheitsbeweis.
+  <p>
+
+  <h1>Veröffentlichungen</h1>
+
+  <p>Sehen <a href="cv-{{ page.lang }}.html">Lebenslauf</a>.</p>
+
 </div>
